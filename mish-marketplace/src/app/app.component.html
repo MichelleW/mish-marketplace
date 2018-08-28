@@ -1,0 +1,22 @@
+ 
+<h2>Welcome to {{title}}</h2>
+
+
+
+<ul class="nav nav-pills nav-fill">
+  <li class="nav-item">
+      <a [routerLink]="['/listing', 'new']" class="nav-link active">Add a new item</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/listing', 'details']">Listing details</a>
+    </li>
+  <li class="nav-item">
+    <a class="nav-link" [routerLink]="['listing/edit', '9']">edit item id 9 </a>
+  </li>
+  <a class="nav-link" [routerLink]="['listing', '9']"> ['listing', '9']details item id 9 </a>
+  <li class="nav-item">
+    <a class="nav-link" [routerLink]="['/listing/delete']">Delete</a>
+  </li>
+</ul>
+  
+<router-outlet></router-outlet>
