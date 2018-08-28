@@ -1,14 +1,35 @@
-<p>
-  list-items works!
-</p>
+<div class="all-products mt-5">
 
 
+  <!-- <a [routerLink]="['/details']" class="btn btn-primary mr-1">Details</a>
 
-<a [routerLink]="['/details']" class="btn btn-primary mr-1">Details</a>
-
-<a [routerLink]="['/listings', 'new']" class="btn btn-primary mr-1">List</a>
-
+  <a [routerLink]="['/listings', 'new']" class="btn btn-primary mr-1">List</a> -->
 
 
+  <div class="row">
 
-<router-outlet></router-outlet>
+    <div *ngFor="let item of items" class="mr">
+     
+      <a [routerLink]="[item._id]" class="item-card">
+
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="{{item.imgUrl}}" alt="Card image cap">
+          <div class="card-body">
+
+            <h5 class="card-title">{{item.name}}</h5>
+
+            <p class="card-text">{{item.description}}</p>
+           
+            <a href="#" class="btn btn-primary mr-1">
+              <i class="fas fa-heart"></i> {{item.likes}}33</a>
+            <a href="#" class="btn btn-primary"> {{item.comments}}</a>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+
+
+</div>

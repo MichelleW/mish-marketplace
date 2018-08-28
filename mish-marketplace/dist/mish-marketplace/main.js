@@ -33,14 +33,15 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
-/* harmony import */ var _delete_delete_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./delete/delete.component */ "./src/app/delete/delete.component.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _details_details_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./details/details.component */ "./src/app/details/details.component.ts");
-/* harmony import */ var _edit_edit_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./edit/edit.component */ "./src/app/edit/edit.component.ts");
-/* harmony import */ var _new_new_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./new/new.component */ "./src/app/new/new.component.ts");
-/* harmony import */ var _list_items_list_items_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./list-items/list-items.component */ "./src/app/list-items/list-items.component.ts");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _cart_cart_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cart/cart.component */ "./src/app/cart/cart.component.ts");
+/* harmony import */ var _delete_delete_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./delete/delete.component */ "./src/app/delete/delete.component.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _details_details_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./details/details.component */ "./src/app/details/details.component.ts");
+/* harmony import */ var _edit_edit_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./edit/edit.component */ "./src/app/edit/edit.component.ts");
+/* harmony import */ var _new_new_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./new/new.component */ "./src/app/new/new.component.ts");
+/* harmony import */ var _list_items_list_items_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./list-items/list-items.component */ "./src/app/list-items/list-items.component.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -55,22 +56,23 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-// const routes: Routes = [];
+
 var routes = [
-    { path: 'listing', component: _list_items_list_items_component__WEBPACK_IMPORTED_MODULE_5__["ListItemsComponent"] },
-    { path: 'listing/new', component: _new_new_component__WEBPACK_IMPORTED_MODULE_4__["NewComponent"] },
-    { path: 'listing/edit/:id', component: _edit_edit_component__WEBPACK_IMPORTED_MODULE_3__["EditComponent"] },
-    { path: 'listing/:id', component: _details_details_component__WEBPACK_IMPORTED_MODULE_2__["DetailsComponent"] },
-    { path: 'listing/delete', component: _delete_delete_component__WEBPACK_IMPORTED_MODULE_0__["DeleteComponent"] },
-    { path: '', pathMatch: 'full', component: _app_component__WEBPACK_IMPORTED_MODULE_1__["AppComponent"] }
+    { path: 'listing', component: _list_items_list_items_component__WEBPACK_IMPORTED_MODULE_6__["ListItemsComponent"] },
+    { path: 'listing/new', component: _new_new_component__WEBPACK_IMPORTED_MODULE_5__["NewComponent"] },
+    { path: 'listing/edit/:id', component: _edit_edit_component__WEBPACK_IMPORTED_MODULE_4__["EditComponent"] },
+    { path: 'listing/:id', component: _details_details_component__WEBPACK_IMPORTED_MODULE_3__["DetailsComponent"] },
+    { path: 'listing/delete', component: _delete_delete_component__WEBPACK_IMPORTED_MODULE_1__["DeleteComponent"] },
+    { path: 'listing/cart', component: _cart_cart_component__WEBPACK_IMPORTED_MODULE_0__["CartComponent"] },
+    { path: 'listing', pathMatch: 'full', component: _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"] }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
     }
     AppRoutingModule = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_6__["NgModule"])({
-            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__["RouterModule"].forRoot(routes)],
-            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__["RouterModule"]]
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_7__["NgModule"])({
+            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"].forRoot(routes)],
+            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"]]
         })
     ], AppRoutingModule);
     return AppRoutingModule;
@@ -98,7 +100,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = " \n<h2>Welcome to {{title}}</h2>\n\n\n\n<ul class=\"nav nav-pills nav-fill\">\n  <li class=\"nav-item\">\n      <a [routerLink]=\"['/listing', 'new']\" class=\"nav-link active\">Add a new item</a>\n  </li>\n  <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"['/listing', 'details']\">Listing details</a>\n    </li>\n  <li class=\"nav-item\">\n    <a class=\"nav-link\" [routerLink]=\"['listing/edit', '9']\">edit item id 9 </a>\n  </li>\n  <a class=\"nav-link\" [routerLink]=\"['listing', '9']\"> ['listing', '9']details item id 9 </a>\n  <li class=\"nav-item\">\n    <a class=\"nav-link\" [routerLink]=\"['/listing/delete']\">Delete</a>\n  </li>\n</ul>\n  \n<router-outlet></router-outlet>"
+module.exports = "<h2>\n  Welcome to {{title}}</h2>\n\n\n\n<ul class=\"nav nav-pills\">\n  <li class=\"nav-item\">\n    <a [routerLink]=\"['listing', 'new']\" class=\"nav-link \">Add a new item</a>\n  </li>\n  <li class=\"nav-item\">\n    <a class=\"nav-link\" [routerLink]=\"['listing']\">All Listing</a>\n  </li>\n  \n  <li class=\"nav-item\">\n    <a class=\"nav-link\" [routerLink]=\"['listing', 'details']\">Listing details</a>\n  </li>\n  <li class=\"nav-item\">\n    <a class=\"nav-link\" [routerLink]=\"['listing/edit', '9']\">edit item id 9 </a>\n  </li>\n  <a class=\"nav-link\" [routerLink]=\"['listing', '9']\"> details item id 9 </a>\n  <li class=\"nav-item\">\n    <a class=\"nav-link\" [routerLink]=\"['/listing/delete']\">Delete</a>\n  </li>\n  <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"['/cart']\">Cart</a>\n    </li>\n  \n</ul>\n\n\n\n\n<router-outlet>\n \n</router-outlet>"
 
 /***/ }),
 
@@ -299,6 +301,17 @@ var DataService = /** @class */ (function () {
     function DataService(_http) {
         this._http = _http;
     }
+    // getProducts(){
+    //   return this._http.get('')
+    // }
+    DataService.prototype.addNewItem = function (newItemObj) {
+        console.log('new item :', newItemObj);
+        return this._http.post('/api/listing-new', newItemObj);
+    };
+    DataService.prototype.getAllItems = function () {
+        console.log('log from getAllItem :');
+        return this._http.get('/api/listing');
+    };
     DataService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
             providedIn: 'root'
@@ -508,7 +521,7 @@ var EditComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "a, a:hover, a:visted{\n  text-decoration: none !important;\n\n}\n\n.mr{\n  margin-right: 30px;\n}\n "
 
 /***/ }),
 
@@ -519,7 +532,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  list-items works!\n</p>\n\n\n\n<a [routerLink]=\"['/details']\" class=\"btn btn-primary mr-1\">Details</a>\n\n<a [routerLink]=\"['/listings', 'new']\" class=\"btn btn-primary mr-1\">List</a>\n\n\n\n\n<router-outlet></router-outlet>"
+module.exports = "<div class=\"all-products mt-5\">\n\n\n  <!-- <a [routerLink]=\"['/details']\" class=\"btn btn-primary mr-1\">Details</a>\n\n  <a [routerLink]=\"['/listings', 'new']\" class=\"btn btn-primary mr-1\">List</a> -->\n\n\n  <div class=\"row\">\n\n    <div *ngFor=\"let item of items\" class=\"mr\">\n     \n      <a [routerLink]=\"[item._id]\" class=\"item-card\">\n\n        <div class=\"card\" style=\"width: 18rem;\">\n          <img class=\"card-img-top\" src=\"{{item.imgUrl}}\" alt=\"Card image cap\">\n          <div class=\"card-body\">\n\n            <h5 class=\"card-title\">{{item.name}}</h5>\n\n            <p class=\"card-text\">{{item.description}}</p>\n           \n            <a href=\"#\" class=\"btn btn-primary mr-1\">\n              <i class=\"fas fa-heart\"></i> {{item.likes}}33</a>\n            <a href=\"#\" class=\"btn btn-primary\"> {{item.comments}}</a>\n          </div>\n        </div>\n      </a>\n\n    </div>\n\n  </div>\n\n\n</div>"
 
 /***/ }),
 
@@ -555,6 +568,18 @@ var ListItemsComponent = /** @class */ (function () {
         this._router = _router;
     }
     ListItemsComponent.prototype.ngOnInit = function () {
+        this.items = [];
+        this.msg = "";
+        this.getAllItems();
+    };
+    ListItemsComponent.prototype.getAllItems = function () {
+        var _this = this;
+        this._dataService.getAllItems()
+            .subscribe(function (response) {
+            console.log('response :', response);
+            _this.items = response;
+            _this._router.navigate(['/listing']);
+        }, function (err) { console.log('product component err :', err); });
     };
     ListItemsComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
@@ -589,7 +614,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  new works!\n</p>\n"
+module.exports = "<div class=\"list-new col-md-8 mt-5\">\n  <h2>List A New Item</h2>\n\n  <form (submit)=\"addNewItem()\">\n    <div class=\"form-group row\">\n      <!-- <input type=\"text\" [(ngModel)]=\"obj.name\" class=\"form-control\"> -->\n      <label for=\"item-name\" class=\"col-sm-2 col-form-label\">Item name: </label>\n      <div class=\"col-sm-10\">\n        <input type=\"text\" [(ngModel)]=\"newItemObj.name\" name=\"newItemObj.name\" class=\"form-control\">\n      </div>\n    </div>\n    <div class=\"form-group row\">\n        <!-- <input type=\"text\" [(ngModel)]=\"obj.name\" class=\"form-control\"> -->\n        <label for=\"item-description\" class=\"col-sm-2 col-form-label\">Item Description: </label>\n        <div class=\"col-sm-10\">\n          <input type=\"text\" [(ngModel)]=\"newItemObj.description\" name=\"newItemObj.description\" class=\"form-control\">\n        </div>\n      </div>\n    <div class=\"form-group row\">\n      <label for=\"price\" class=\"col-sm-2 col-form-label\">Item Price</label>\n      <div class=\"col-sm-4\">\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"newItemObj.price\" name=\"newItemObj.price\" placeholder=\"$\">\n      </div>\n    </div>\n    <div class=\"form-group row\">\n      <label for=\"imgUrl\" class=\"col-sm-2 col-form-label\">Image Url</label>\n      <div class=\"col-sm-4\">\n        <input type=\"text\" [(ngModel)]=\"newItemObj.imgUrl\" name=\"newItemObj.imgUrl\" class=\"form-control\">\n      </div> \n    </div>\n\n    <div class=\"form-inline\">\n\n      <button type=\"submit\" class=\"btn btn-primary mr-1\">New Item </button>\n      <a href=\"\" class=\"btn btn-primary\">Cancel</a>\n    </div> \n  </form> \n\n</div>"
 
 /***/ }),
 
@@ -603,7 +628,9 @@ module.exports = "<p>\n  new works!\n</p>\n"
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewComponent", function() { return NewComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../data.service */ "./src/app/data.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -614,18 +641,47 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
 var NewComponent = /** @class */ (function () {
-    function NewComponent() {
+    function NewComponent(_route, _router, _dataService) {
+        this._route = _route;
+        this._router = _router;
+        this._dataService = _dataService;
     }
     NewComponent.prototype.ngOnInit = function () {
+        // create a dummy newItemObj for the inital data loading on html page
+        this.newItemObj = { name: "", description: "", price: 0, imgUrl: "", likes: 10, comments: 88 };
+        this.msg = "";
+    };
+    NewComponent.prototype.addNewItem = function () {
+        var _this = this;
+        //first line gets an observable, second line: subscribe to the observable
+        this._dataService.addNewItem(this.newItemObj)
+            .subscribe(function (response) {
+            if (response['errors']) {
+                console.log('res in addNewItem()', response);
+                _this.msg = response['errors'];
+                console.log('err msg ', _this.msg);
+                // response['errors']['errors']['desciption'];
+            }
+            else {
+                console.log('err in addNewItem:');
+                _this._router.navigate(['/listing']);
+                // this.goToPets();
+            }
+        }, function (error) {
+            console.log('here', error);
+            _this.msg = error;
+        });
     };
     NewComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
             selector: 'app-new',
             template: __webpack_require__(/*! ./new.component.html */ "./src/app/new/new.component.html"),
             styles: [__webpack_require__(/*! ./new.component.css */ "./src/app/new/new.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _data_service__WEBPACK_IMPORTED_MODULE_0__["DataService"]])
     ], NewComponent);
     return NewComponent;
 }());
